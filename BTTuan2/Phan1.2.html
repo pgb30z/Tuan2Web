@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example Cafe Menu</title>
+  <style>
+    body {
+      background:#ffffff;
+      font-family: Georgia, serif;
+      color:#000;
+    }
+
+    h1 {
+      text-align:center;
+      color:#8b0000;
+      font-style:italic;
+      text-shadow:0 2px 10px #f4c9c9;
+      margin:16px auto 10px;
+    }
+
+
+    table.frame {
+      border-collapse:collapse;
+      width:880px;
+      margin:0 auto 24px;
+      border:1px solid #b34b4b;
+      background:#fff;
+    }
+    td.cell { padding:0 14px 12px; }
+
+    .navbar {
+      width:880px;
+      margin:0 auto 15px;
+      background:#f08080;  
+      display:flex;
+      align-items:center;
+      border:1px solid #b34b4b;
+    }
+
+    .navbar a {
+      padding:12px 20px;
+      text-decoration:none;
+      color:#fff;              
+      font-weight:bold;
+      text-transform:uppercase;
+      font-size:14px;
+      border-right:1px solid #fff; 
+    }
+    .navbar a:hover {
+      background:#d46a6a;      
+    }
+    .navbar .home img {
+      width:18px;
+      height:18px;
+      vertical-align:middle;
+    }
+
+
+    .search-box {
+      margin-left:auto;
+      padding:0 10px;
+      display:flex;
+      align-items:center;
+    }
+    .search-box input {
+      padding:5px 6px;
+      border:1px solid #b34b4b;
+    }
+    .search-box button {
+      padding:5px 10px;
+      margin-left:4px;
+      background:#fff;
+      border:1px solid #b34b4b;
+      cursor:pointer;
+      color:#b22222;
+      font-weight:bold;
+    }
+    .search-box button:hover {
+      background:#f4c1c1;
+    }
+
+
+    .band {
+      display:block;
+      width:100%;
+      background:#f6efc4;
+      padding:8px 12px;
+      margin:10px 0 8px;
+      color:#7a1f1f;
+      font-size:28px;
+      font-weight:700;
+    }
+
+  
+    ul {
+      list-style:disc;
+      margin:0 0 0 34px;
+      padding:0;
+    }
+    .veg { color:#cf1b1b; }
+    .special {
+      font-weight:bold;
+      text-transform:uppercase;
+      color:#b87a00;
+    }
+
+    .back {
+      display:block;
+      margin:10px 0 0 0;
+      color:#cf1b1b;
+      font-weight:bold;
+      text-decoration:none;
+    }
+    .back:hover { text-decoration:underline; }
+  </style>
+</head>
+<body id="top">
+  <h1>EXAMPLE CAFE MENU</h1>
+
+  <div class="navbar">
+    <a href="#top" class="home">
+      <img src="img/icons8-home-50.png" alt="Home">
+    </a>
+    <a href="#starter">Starter</a>
+    <a href="#main">Main Courses</a>
+    <a href="#desserts">Desserts</a>
+    <div class="search-box">
+      <input type="text" placeholder="">
+      <button>Go</button>
+    </div>
+  </div>
+
+  <table class="frame">
+    <tr>
+      <td class="cell" id="starter">
+        <span class="band">Starter</span>
+        <ul>
+<li>Chesnut and Mushroom Goujons <span class="veg">(v)</span></li>
+          <li>Goat Cheese<span class="veg">(v)</span></li>
+          <li><span class="special">HONEY SOY CHICKEN KEBABS</span><span class="veg">(v)</span></li>
+          <li>Seafood Salad<span class="veg">(v)</span></li>
+        </ul>
+        <a href="#top" class="back">Back to Top</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="cell" id="desserts">
+        <span class="band">Desserts</span>
+        <ul>
+          <li>Lemon Sorbet<span class="veg">(v)</span></li>
+          <li>Chocolate Mud Pie<span class="veg">(v)</span></li>
+          <li>Pecan Pie<span class="veg">(v)</span></li>
+          <li>Selection of fine Cheeses from Around the World<span class="veg">(v)</span></li>
+        </ul>
+        <a href="#top" class="back">Back to Top</a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
